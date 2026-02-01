@@ -40,7 +40,10 @@ If you want to use `uv`:
 uv init --bare --python 3.12
 uv sync --python 3.12
 source .venv/bin/activate
-uv add torch numpy torchvision pillow datasets huggingface-hub transformers wandb
+Install poppler:
+    sudo apt-get update
+    sudo apt-get install poppler-utils -y
+uv add torch numpy torchvision pillow datasets huggingface-hub 'transformers==4.57.6' wandb pdf2image
 ```
 
 If you prefer another environment manager, simply install these packages:  
